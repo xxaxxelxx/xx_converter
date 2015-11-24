@@ -1,0 +1,6 @@
+######################################################################################################################################################################################
+
+intro_ostseewelle-ch07.aac|source=once(single(input));clock.assign_new(sync=false,[source]);output.file(%fdkaac(channels=2, samplerate=44100, aot="mpeg2_he_aac_v2", transmux="adts", sbr_mode=false, bitrate=48),output,fallible=true,on_stop=shutdown,source)
+intro_ostseewelle-ch07.mp3|source=once(single(input));clock.assign_new(sync=false,[source]);output.file(%mp3(samplerate=44100, internal_quality=2, bitrate=128, stereo=true),output,fallible=true,on_stop=shutdown,source)
+
+######################################################################################################################################################################################

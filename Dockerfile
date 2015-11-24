@@ -32,7 +32,6 @@ ADD liquidsoap-1.1.1-full.tar.gz /usr/local/liquidsoap
 COPY PACKAGES /usr/local/liquidsoap/liquidsoap-1.1.1-full/PACKAGES
 WORKDIR /usr/local/liquidsoap/liquidsoap-1.1.1-full
 
-
 RUN sudo -u liquidsoap ./configure
 RUN make
 RUN make install
