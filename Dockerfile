@@ -43,6 +43,7 @@ WORKDIR /
 #RUN mkdir -p /etc/liquidsoap
 
 # clean up
+RUN apt-get -qq -y install mc 
 RUN apt-get clean
 
 COPY *.rc /
