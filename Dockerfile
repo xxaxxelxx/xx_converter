@@ -6,6 +6,7 @@ RUN sed -e 's/$/ contrib non-free/' -i /etc/apt/sources.list
 RUN apt-get -qq -y update
 #RUN apt-get -qq -y dist-upgrade
 
+ENV TERM=xterm
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN groupadd liquidsoap
