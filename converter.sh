@@ -21,7 +21,8 @@ while true; do
 		echo "$LIQLINE" | grep '^$' > /dev/null && continue
 		OUTFILEBASE="${LIQLINE%%\|*}"
 		CODE="${LIQLINE##*\|}"
-		sudo -u $LQSPUSER $LQSP "input='$INFILE';output='$DEPOTDIR/$OUTFILEBASE';$CODE" > /dev/null 2>&1
+		sudo -u $LQSPUSER $LQSP "input='$INFILE';output='$DEPOTDIR/.$OUTFILEBASE.tmp';$CODE" > /dev/null 2>&1 && \
+		mv -f $DEPOTDIR/.$OUTFILEBASE.tmp $DEPOTDIR/$OUTFILEBASE
 	    done < $INFILEBASE.rc
 	    echo $INFILEMD5 > "$DEPOTDIR/md5/$INFILEBASE"
 	fi

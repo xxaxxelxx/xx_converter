@@ -43,18 +43,18 @@ WORKDIR /
 #RUN mkdir -p /etc/liquidsoap
 
 # clean up
-#RUN apt-get clean
+RUN apt-get clean
 
-#COPY *.liq /etc/liquidsoap/
+COPY *.rc /
 
 #RUN chown -R liquidsoap:liquidsoap /etc/liquidsoap
 #RUN chmod 600  /etc/liquidsoap/*.liq
 
-#COPY ./entrypoint.sh /entrypoint.sh
+COPY ./*.sh /
 #RUN chown liquidsoap:liquidsoap /entrypoint.sh
-#RUN chmod 700 /entrypoint.sh
+RUN chmod 700 /*.sh
 
 #USER liquidsoap:liquidsoap
 
-#ENTRYPOINT [ "/entrypoint.sh" ]
+ENTRYPOINT [ "/entrypoint.sh" ]
 #CMD [ "bash" ]
