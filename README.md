@@ -2,7 +2,7 @@
 # Intro transcoding module
 # Part of Dockerized Distributed Streaming System
 
-[xxaxxelxx/xx_account](https://index.docker.io/u/xxaxxelxx/xx_converter/)
+[xxaxxelxx/xx_converter](https://index.docker.io/u/xxaxxelxx/xx_converter/)
 
 ## Synopsis
 This repo is the base for an [automated docker build](https://hub.docker.com/r/xxaxxelxx/xx_converter/) and is part of a dockerized distributed streaming system consisting of following elements:
@@ -25,7 +25,7 @@ This repo is the base for an [automated docker build](https://hub.docker.com/r/x
 The running docker container provides a service for very special streaming purposes usable for a distributed architecture.
 It presumably will not fit for you, but it is possible to tune it. If you need some additional information, please do not hesitate to ask.
 
-This [xxaxxelxx/xx_account](https://hub.docker.com/r/xxaxxelxx/xx_converter/) repo is an essential part of a complex compound used for streaming.
+This [xxaxxelxx/xx_converter](https://hub.docker.com/r/xxaxxelxx/xx_converter/) repo is an essential part of a complex compound used for streaming.
 It is used to create icecast intro files exactly fitting with the icecast mountpoints special audio format.
 
 ### Supported formats
